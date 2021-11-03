@@ -6,14 +6,15 @@
 int main(){
 int x;
 int y;
-while(scanf("%d%d",&x,&y)!=2){
-    char c;
-    scanf("%c",&c);
-}
+do
+{
+    scanf("%d%d",&x,&y);
+} while (x<=0 || y<=0);
+
 int min = x < y? x:y;
 int max = x > y? x:y;
 printf("The Armstrong numbers are:");
-for (int i = min; i < max ; i++)
+for (int i = min; i <= max ; i++)
 {
    if (isArmstrong(i)==1)
    {
@@ -21,7 +22,7 @@ for (int i = min; i < max ; i++)
    }
 }
 printf("\nThe Palindromes are:");
-for (int i = min; i < max ; i++)
+for (int i = min; i <= max ; i++)
 {
    if (isPalindrome(i)==1)
    {
@@ -30,7 +31,7 @@ for (int i = min; i < max ; i++)
 }
 
 printf("\nThe Prime numbers are:");
-for (int i = min; i < max ; i++)
+for (int i = min; i <= max ; i++)
 {
    if (isPrime(i)==1)
    {
@@ -39,7 +40,7 @@ for (int i = min; i < max ; i++)
 }
 
 printf("\nThe Strong numbers are:");
-for (int i = min; i < max ; i++)
+for (int i = min; i <= max ; i++)
 {
    if (isStrong(i)==1)
    {
