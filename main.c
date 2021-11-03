@@ -12,12 +12,12 @@ while(scanf("%d%d",&x,&y)!=2){
 }
 int min = x < y? x:y;
 int max = x > y? x:y;
-printf("The Armstrong numbers are: ");
+printf("The Armstrong numbers are:");
 for (int i = min; i < max ; i++)
 {
    if (isArmstrong(i)==1)
    {
-       printf("%d ",i);
+       printf(" %d",i);
    }
 }
 printf("\nThe Palindromes are: ");
@@ -25,7 +25,7 @@ for (int i = min; i < max ; i++)
 {
    if (isPalindrome(i)==1)
    {
-       printf("%d ",i);
+       printf(" %d",i);
    }
 }
 
@@ -34,7 +34,7 @@ for (int i = min; i < max ; i++)
 {
    if (isPrime(i)==1)
    {
-       printf("%d ",i);
+       printf(" %d",i);
    }
 }
 
@@ -43,7 +43,7 @@ for (int i = min; i < max ; i++)
 {
    if (isStrong(i)==1)
    {
-       printf("%d ",i);
+       printf(" %d",i);
    }
 }
 
