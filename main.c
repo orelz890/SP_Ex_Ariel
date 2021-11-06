@@ -1,14 +1,19 @@
 #include "NumClass.h"
-#include <math.h>
 #include <stdio.h>
-#include <string.h>
 
 int main(){
-int x;
-int y;
+int x=-1;
+int y=-1;
 do
 {
-    scanf("%d%d",&x,&y);
+if(x<0){
+    scanf("%d",&x);
+    char c;
+    scanf("%c",&c);}
+if(y<0){
+    scanf("%d",&y);
+    char c;
+    scanf("%c",&c);}
 } while (x<=0 || y<=0);
 
 int min = x < y? x:y;
